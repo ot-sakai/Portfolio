@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>My Portfolio</title>
+        <meta name="description" content="私のポートフォリオ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ファビコン -->
+        <link rel="icon" type="image/png" href="images/favicon.PNG">
+
+    <!-- リセットCSS -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- Googleフォント -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+        
+    <!-- オリジナルCSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="cover cover-home">
+            <header class="page-header wrapper">
+                <nav>
+                    <ul class="main-nav font-english">
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#skill">Skill</a></li>
+                        <li><a href="#work">Works</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h2 class="page-title font-english">My Portfolio</h2>
+        </div>
+
+        <section class="about">
+            <h3 class="heading-large font-english"><a id="profile">My Profile</a></h3>
+            <p>
+                大阪大学情報科学研究科の坂井音哉と申します。石川県出身の22歳。大学では、アルゴリズムについて研究しています。趣味はサッカー、アニメ・漫画・ライトノベル、競技プログラミングです。
+                よろしくお願いします。
+            </p>
+            
+            <h1>研究</h1>
+            <img src="images/graph.jpg" alt="" width="400" height="200" style="display: block; margin: auto;" />
+            <br>
+            <p>
+                現在、大学院で分散アルゴリズムの研究を行っております。学部の卒業論文では、1-極大独立集合というトピックを扱いました。
+                基本的なアルゴリズムや時間計算量・空間計算量の解析、そして、論理的な思考力はエンジニアとしてもおおいに役立つと考えております。
+            </p>
+                
+                
+
+            <h1>趣味</h1>
+            <main class="wrapper grid">
+                <div class="item">
+                    <h4>サッカー</h4>
+                    <img src="images/football.jpg" alt="">
+                    <p>小学3年生からサッカーしています。大学でもサッカーサークルにも所属しています。</p>
+                </div>
+                <div class="item">
+                    <h4>アニメ・漫画・ラノベ</h4>
+                    <img src="images/manga.png" alt="">
+                    <p>アニメ、漫画、ライトノベル好きです。</p>
+                </div>
+                <div class="item">
+                    <h4>競技プログラミング</h4>
+                    <img src="images/programing.jpeg" alt="">
+                    <p>最近始めました。現在緑色コーダーです。</p>
+                </div>
+            </main>
+        </section>
+
+        <section class="about">
+            <h3 class="heading-large font-english"><a id="skill">Skill</a></h3>
+
+            <h1>言語</h1>
+            <ul>
+                <li>c,c++</li>一番得意です。競技プログラミングでも主にc++を使用しています。
+                <li>Python</li>授業で使いました。競技プログラミングでもたまに使用します。
+                <li>Java</li>授業で使いました。授業では、Javaで簡易的なコンパイラやライフゲームを作りました。
+                <li>JavaScript</li>バイトで利用しました。
+            </ul>
+            <br>
+            <h1>その他(プログラミング言語以外)</h1>
+            <ul>
+                <li>SQL</li>授業でSQLについて習いました。PostgreSQLを使用しました。
+                <li>HTML&CSS</li>バイトとこのポートフォリオ作成で使用しました。
+            </ul>
+            <br>
+            <h1>ツール</h1>
+            <ul>
+                <li>VSCode</li>コードを書くときはいつも利用しています。
+                <li>Git, GitHub</li>授業で扱いました。バイトでもソースコード管理のために利用しました。
+                <li>Linux</li>授業で利用しました。UbuntuとCygwinで利用しています。競技プログラミングのためにWSLをVSCodeと接続しました。
+                <li>Eclipse</li>授業で扱いました。
+                <li>Node.js</li>JavaScriptのテストフレームワークJestをバイトで利用しました。
+            </ul>
+            <br>
+            <h1>開発経験</h1>
+            <p>
+                学部4年生の10月から3月の間、研究室の友人と二人でWebプッシュ通知のシステム開発およびその調査を行っておりました。
+                具体的には、FCM(Firebase Cloud Messaging)とFirestoreを利用してChrome、Safariの両方で動作するWebプッシュ送受信プログラムを作りました。
+            </p>
+        </section>
+
+        <section class="about">
+            <h3 class="heading-large font-english"><a id="work">Works</a></h3>
+            <p>私がGithubにあげている成果物の紹介をします。</p>
+            <ul>
+                <li>kyopro-library</li>私が競技プログラミングで良く扱うアルゴリズムをまとめたものです。
+                主にBFSやDFSなどのグラフ探索アルゴリズム、エラトステネスの篩や高速素因数分解などの整数系のアルゴリズム、trie木やフェニック木などのデータ構造等いろいろあります。
+                <li>push-test & server</li>バイトでWebプッシュ通知送受信プログラムを作る際に作った簡易的なプログラムとなります。
+                push-testは配信ID(トークン)取得とWebプッシュ通知受信を確認できるプログラムで、serverは配信IDを指定したFCMへのWebプッシュ配信リクエストプログラムです。
+                <li>LifeGame</li>授業で作った簡易的なライフゲームのプログラムです。初めてJavaを使ってプログラムしたのですが、個人的に気に入っていてGithubに上げました。
+            </ul>
+
+            <div class="copyright">
+                <small>portfolio</small>
+            </div>
+        </section>
+    </body>
+</html>
